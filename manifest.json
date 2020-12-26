@@ -1,6 +1,6 @@
 {
   "name": "BlackBoard Skip for WCC",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Skip the extra username prompt for wccnet.edu",
   "permissions": [],
   "icons": {
@@ -13,7 +13,8 @@
   "content_scripts": [
     {
       "matches": [
-        "https://blackboard.wccnet.edu/"
+        "https://blackboard.wccnet.edu/",
+        "https://blackboard.wccnet.edu/webapps/login/*"
       ],
       "js": [
         "submit.js"
